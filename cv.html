@@ -64,20 +64,41 @@
         </div>
         <!-- /#sidebar-wrapper -->
 
-<div id="page-content-wrapper">
-            <!<div class="container-fluid">
-              <!  <div class="row">
-                <!    <div class="columns download">
-                        <p>
-                            Download in PDF form <a href="docs/kraig.pdf" class="button">Download CV</a>
-                        </p>
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <a href="docs/kraig.pdf" class="button">Download CV</a>
+                        <h3>Education</h3>
 
+                        <h3>Research Experience</h3>
 
+                        <h3>Publications</h3>
 
-                <!    </div>
-                <!</div>
-            <!</div>
+                        <h3>Skills</h3>      
+                    </div>
+                </div>
+            </div>
         </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
 
 </body>
 
