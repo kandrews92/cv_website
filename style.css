@@ -89,3 +89,7 @@
 	* html #footer {
 		height:1px;
 	}
+
+	.table td { 
+		valign: top;
+	}
