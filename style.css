@@ -101,3 +101,23 @@
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
 }
+
+a:link {
+	color: blue;
+	text-decoration: none;
+}
+
+a:visited {
+	color: blue;
+	text-decoration: none;
+}
+
+a:hover {
+	color: black;
+	text-decoration: underline;
+}
+
+a:active {
+	color: blue;
+	text-decoration: underline;
+}
