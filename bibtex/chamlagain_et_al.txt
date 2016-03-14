@@ -1,0 +1,6 @@
+@article{chamlagain_et_al2016,
+	author = {{C}hamlagain, {B}. and {P}erera, {M}. and {C}huang, {H}.{J} and {B}owman, {A}. and {R}ijal, U. and {A}ndrews, {K}. and {K}lesko, {J}. and {W}inter, {C}. and {Z}hou, Z.},
+	title = {{S}ubstrate {D}ependence of {H}all and {F}ield-{E}ffect {M}obilities in {F}ew-{L}ayer $\textrm{MoS}_2$ {F}ield-{E}ffect {T}ransistors},
+	journal = {Manuscript in preperation},
+	year = {2016}
+}
