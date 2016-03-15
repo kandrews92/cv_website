@@ -1,0 +1,12 @@
+#!/bin/bash
+
+RM='rm -f'				# Command to remove files
+base="*.py~ *.pyc *.txt *.pdf" 		# File ext
+gauss="cd Gauss/"
+
+echo "cleaning $base from $PWD..."
+$RM $base
+
+echo "cleaning $base from $gauss..."
+$gauss; $RM $base
+

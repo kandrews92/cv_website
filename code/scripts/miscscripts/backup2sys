@@ -1,0 +1,50 @@
+#!/bin/sh
+
+BACKUP=backups
+
+## FTP ##
+FTPD="~/"
+FTPU="kraig"
+FTPP="_Gotigers14"
+FTPS="kevinjandrews.com"
+
+## BINARIES ##
+TAR="$(which tar)"
+GZIP="$(which gzip)"
+FTP="$(which ftp)"
+
+## Today + hour in 24h format ##
+NOW=$(date +%Y%m%d)
+
+## Create tmp dir ##
+mkdir $BACKUP/$NOW
+
+$TAR -cf $BACKUP/$NOW/wayne.tar wayne/
+$TAR -cf $BACKUP/$NOW/msu.tar msu/
+$TAR -cf $BACKUP/$NOW/textbooks.tar textbooks/
+$TAR -cf $BACKUP/$NOW/travel.tar travel/
+$TAR -cf $BACKUP/$NOW/scripts.tar scripts/
+$TAR -cf $BACKUP/$NOW/fortran.tar fortran/
+$TAR -cf $BACKUP/$NOW/cplusplus.tar cplusplus/
+$TAR -cf $BACKUP/$NOW/matlab.tar matlab/
+$TAR -cf $BACKUP/$NOW/cprog.tar cprog/
+$TAR -cf $BACKUP/$NOW/Desktop.tar Desktop/
+$TAR -cf $BACKUP/$NOW/eostables.tar eostables/
+$TAR -cf $BACKUP/$NOW/old.tar old/
+$TAR -cf $BACKUP/$NOW/astrodata.tar astrodata/
+$TAR -cf $BACKUP/$NOW/java.tar java/
+$TAR -cf $BACKUP/$NOW/mathicsInstall.tar mathicsInstall/
+$TAR -cf $BACKUP/$NOW/Pictures.tar Pictures/
+$TAR -cf $BACKUP/$NOW/linux-distros.tar linux-distros/
+$TAR -cf $BACKUP/$NOW/Documents.tar Documents/
+$TAR -cf $BACKUP/$NOW/Templates.tar Templates/
+$TAR -cf $BACKUP/$NOW/Videos.tar Videos/
+$TAR -cf $BACKUP/$NOW/Public.tar Public/
+$TAR -cf $BACKUP/$NOW/Downloads.tar Downloads/
+$TAR -cf $BACKUP/$NOW/backup-old.tar backups/
+ARCHIVE=$BACKUP/server01-archived-$NOW.tar.gz
+ARCHIVED=$BACKUP/$NOW
+
+$TAR -zcvf $ARCHIVE $ARCHIVED
+
+echo "Backup finished"

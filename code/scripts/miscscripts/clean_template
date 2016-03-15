@@ -1,0 +1,19 @@
+#!/bin/bash
+
+RM='rm -f'		# Command to remove files
+PYs="*.py~ *.pyc" 	# File ext
+TXTs="*.txt *.dat" 	# File ext
+PDFs='*pdf'		# File ext
+CDdata='cd Data/'	# Move to proper DIR
+CDplots='cd ../Plots/'	# Move to proper DIR
+
+echo "cleaning $PYs $TXTs $PDFs from $PWD..." 
+echo "cleaning $PYs $TXTs $PDFs from $CDdata..."
+echo "cleaning $PYs $TXTs $PDFs from $CDplots..."
+$RM $PYs $TXTs $PDFs 	# RM from top DIR
+$CDdata			# CD to next DIR
+$RM $PYs $TXTs $PDFs    # RM from next DIR
+$CDplots		# CD out of current DIR to next DIR
+$RM $PYs $TXTs $PDFs	# RM from DIR
+
+echo "all created data files and plots have been deleted..."
