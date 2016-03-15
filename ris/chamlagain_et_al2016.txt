@@ -1,0 +1,17 @@
+TY  - JOUR
+A1  - Chamlagain, B.
+A2  - Perera, M.
+A3  - Chuang, H.J.
+A4  - Bowman, A.
+A5  - Rijal, U.
+A6  - Andrews, K.
+A7  - Klesko, J.
+A8  - Winter, C.
+A9  - Zhou, Z.
+PY  - 2016
+TI  - Substrate Dependence of Hall and Field-Effect Mobilities in Few-Layer MoS2 Field-Effect Transistors
+JO  - 
+SP  - 
+EP  - 
+VL  - 
+ER  - 
