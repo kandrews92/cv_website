@@ -8,6 +8,9 @@
 	<meta name="copyright" content="Copyright (c) 2004 Roger Johansson">
 	<meta name="author" content="Roger Johansson">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+	</script>
 </head>
 <body>
 <div id="wrap">
@@ -32,7 +35,7 @@
 			<tr>
 				<td>&nbsp;&nbsp;&nbsp;&nbsp;<b style="font-size:90%;">Download</b>: <a href="code/shell/clean" download><code>clean</code></a></td>
 			<tr>
-				<td><hr>Script <code>backup</code> that allows user to backup a specfic directory or path to a server. To use you may need to become root (i.e. <code>$ sudo su</code>) and then run <code>$ chmod +x (script name)</code> (to make it executable) and then move the script to <code>/bin/</code> so that it can be used as a command. To be used for specific use, edit the username to fit your specific username on the external server, edit the servername and edit the password accordingly. Optional edits can be made to change the source directory target to reflect the folder(s) to be backed-up, adding to crontab by running <code>crontab -e</code> in the <code>/home/user/</code> path and set the approriate time that you would like to run it. (<i style="font-size:80%;">Partial credit to Kevin Andrews for this script</i>)</td>
+				<td><hr>Script <code>backup</code> that allows user to backup a specfic directory or path to a server. To use you may need to become root (i.e. <code>$ sudo su</code>) and then run <code>$ chmod +x (script name)</code> (to make it executable) and then move the script to <code>/bin/</code> so that it can be used as a command. To be used for specific use, edit the username to fit your specific username on the external server, edit the servername and edit the password accordingly. Optional edits can be made to change the source directory target to reflect the folder(s) to be backed-up, adding to crontab by running <code>$ crontab -e</code> in the <code>/home/user/</code> path and set the approriate time that you would like to run it. (<i style="font-size:80%;">Script created in collaboration with Kevin Andrews</i>)</td>
 			</tr>
 			<tr>
 				<td>&nbsp;&nbsp;&nbsp;&nbsp;<b style="font-size:90%;">Download</b>: <a href="code/scripts/backupMain/backup" download><code>backup</code></a></td>
@@ -80,14 +83,33 @@
 		<li><h4>Fortran</h4>
 		<table class="table" style="width:100%">
 			<tr>
-				<td>Coming soon...</td>
+				<td>Below is <code>polymer.tar</code>. This contains a <code>Makefile</code> that resolves dependencies for the file <code>Poly3D.f95</code>. To compile <code>plplot</code> is needed (plplot needs to be <a href="http://plplot.sourceforge.net/">downloaded</a> first). <code>plplot</code> allows for the visualization of a simple 3D polymer. The polymer is created subject to a Lennard-Jones potential 
+				\begin{equation}
+					V_{LJ}(r) = 4\epsilon\left[\left(\frac{\sigma}{r}\right)^{12}-\left(\frac{\sigma}{r}\right)^{6}\right],
+				\end{equation}
+				 with the bond angle chosen via a random angle. Then the polymer chain is built through a Monte Carlo accept/reject method using the Partition function of the system. Making the file and running the executable will show the visualization of a 3D polymer chain. This code can be expanded on, if desired, by adding a bonding potential term and a Coulomb potential term into the calculations. (<i style="font-size:80%;">Code created in collaboration with Daniel Woolridge</i>)
+				</td>
+			</tr>
+			<tr>
+				<td>&nbsp;&nbsp;&nbsp;&nbsp;<b style="font-size:90%;">Download:</b>: <a href="code/fortran/polymer.tar" download><code>polymer.tar</code></a></td>
 			</tr>
 		</table></li>
 
 		<li><h4>LaTeX</h4>
 		<table class="table" style="width:100%">
 			<tr>
-				<td>Coming soon...</td>
+				<td>Below is <code>astro.tar</code>. This contains <code>presentation.tex</code> and <code>presentation.pdf</code>. <code>presentation.tex</code> uses the beamer LaTeX class (<a href="http://mirror.jmu.edu/pub/CTAN/macros/latex/contrib/beamer/doc/beameruserguide.pdf">documentation</a>) to generate a PowerPoint style presentation. This allows for direct use of the LaTeX math environment and incorporation of figures (and much more). The TeX file can be used and edited as a template for future use.</td>
+			</tr>
+			<tr>
+				<td>&nbsp;&nbsp;&nbsp;&nbsp;<b style="font-size:90%;">Download:</b>: <a href="code/latex/beamer/astro.tar" download><code>beamer_example.tar</code></a></td>
+			</tr>
+			<tr>
+				<td>&nbsp;&nbsp;&nbsp;&nbsp;<b style="font-size:90%;">Download:</b>: <a href="code/latex/beamer/astro/Present_temp.tex" download><code>presentation.tex</code></a>
+				</td>
+			</tr>
+			<tr>
+				<td>&nbsp;&nbsp;&nbsp;&nbsp;<b style="font-size:90%;">Download:</b>: <a href="code/latex/beamer/astro/Present_temp.pdf" download><code>presentation.pdf</code></a>
+				</td>
 			</tr>
 		</table></li>
 
