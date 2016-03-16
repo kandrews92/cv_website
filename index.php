@@ -33,8 +33,8 @@
 		</p>
 		<hr>
 	</div>
-	<!-<?php include("navigation.php"); ?>
-	<div id="sidebar">
+	<?php include("navigation.php"); ?>
+	<!--<div id="sidebar">
 		<img src="images/kraig.jpg" alt="Picture of Kraig Andrews" height="128" width="128" style="border:1px solid black;">
 		<ul>
 			<li><a href="index.html">Home</a></li>
@@ -49,7 +49,7 @@
 			<li><a href="code.html">Code</a></li>
 			<li><a href="contact.html">Contact</a></li>
 		</ul>
-	</div>
+	</div>-->
 	<! <? php include("footer.php"); ?>
 	<div id="footer">
 		<p>&copy; 2016 Kraig Andrews</p>

@@ -1,6 +1,14 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Kraig Andrews' Home Page</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
 	<div id="sidebar">
 		<img src="images/kraig.jpg" alt="Picture of Kraig Andrews" height="128" width="128" style="border:1px solid black;">
-		<!<?php include("navigation.php"); ?>
 		<ul>
 			<li><a href="index.html">Home</a></li>
 			<li><a href="about.html">About Me</a></li>
@@ -15,3 +23,5 @@
 			<li><a href="contact.html">Contact</a></li>
 		</ul>
 	</div>
+</body>
+</html>
