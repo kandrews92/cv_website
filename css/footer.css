@@ -1,0 +1,16 @@
+	#footer {
+		clear:both;
+		padding:5px;
+		display:block;
+		color:white;
+		text-align:center;
+		background:black;
+		font-size:80%;
+		font-family: helvetica;
+	}
+	#footer p {
+		margin:0;
+    }
+	* html #footer {
+		height:1px;
+	}

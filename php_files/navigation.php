@@ -4,9 +4,10 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>Kraig Andrews' Home Page</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+	<!-<?php include("php_files/navigation.php"); ?>
 	<div id="sidebar">
 		<img src="images/kraig.jpg" alt="Picture of Kraig Andrews" height="128" width="128" style="border:1px solid black;">
 		<ul>
